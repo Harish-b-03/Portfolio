@@ -21,7 +21,7 @@ jobs:
     
     defaults:
       run:
-        working-directory: frontend_react, backend_sanity
+        working-directory: ./frontend_react
     
     steps:
     - uses: actions/checkout@v3
