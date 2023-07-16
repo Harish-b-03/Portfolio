@@ -1,0 +1,206 @@
+{
+	"name": "Harish",
+	"email": "harishbalaji369@gmail.com",
+	"mediumURL": "https://medium.com/@harishbalaji369",
+	"headerTaglineOne": "Hello! 👋",
+	"headerTaglineTwo": "I'm Harish",
+	"headerTaglineThree": "A Software Developer",
+	"headerTaglineFour": "",
+	"bitmojiURL": "https://images.bitmoji.com/3d/avatar/398103351-99905003853_5-s5-v1.webp",
+	"showCursor": true,
+	"showBlog": true,
+	"darkMode": true,
+	"showResume": true,
+	"socials": [
+		{
+			"id": "1",
+			"title": "Github",
+			"link": "https://github.com/Harish-b-03"
+		},
+		{
+			"id": "2",
+			"title": "LinkedIn",
+			"link": "https://www.linkedin.com/in/harish-b-42a7911b9/"
+		},
+		{
+			"id": "3",
+			"title": "Blog",
+			"link": "https://medium.com/@harishbalaji369"
+		},
+		{
+			"id": "4",
+			"title": "Email",
+			"link": "mailto:harishbalaji369@gmail.com"
+		}
+	],
+	"_comment_projects": [
+		{
+			"id": "1",
+			"title": "Store.",
+			"description": "Ecommerce Website",
+			"imageSrc": "https://images.unsplash.com/photo-1487837647815-bbc1f30cd0d2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Njl8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
+			"website": "https://store-ecommerce-harish-b-03.vercel.app",
+			"code": "https://github.com/Harish-b-03/store-ecommerce"
+		},
+		{
+			"id": "2",
+			"title": "RecipeGPT",
+			"description": "GPT-powered Recipe Generator",
+			"imageSrc": "https://images.unsplash.com/photo-1605153864431-a2795a1b2f95?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwyNTY3ODl8fGVufDB8fHw%3D&auto=format&fit=crop&w=400&q=60",
+			"website": "https://recipe-gpt.netlify.app/",
+			"code": "https://github.com/Harish-b-03/recipe-gpt"
+		},
+		{
+			"id": "3",
+			"title": "Portfolio",
+			"description": "Personal Website",
+			"imageSrc": "https://images.unsplash.com/photo-1504083898675-c896ecdae86e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjJ8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
+			"website": "",
+			"code": "https://github.com/Harish-b-03/portfolio"
+		},
+		{
+			"id": "4",
+			"title": "PhotoFrame",
+			"description": "Photo Gallery App",
+			"imageSrc": "https://images.unsplash.com/photo-1492171983775-a51717616c0d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjB8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
+			"website": "https://photoframe-personal.netlify.app/",
+			"code": "https://github.com/Harish-b-03/gallery"
+		},
+		{
+			"id": "5",
+			"title": "Cupid",
+			"description": "Social Media App",
+			"imageSrc": "https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTAyfHxwYXN0ZWx8ZW58MHx8MHw%3D&auto=format&fit=crop&w=400&q=60",
+			"website": "https://cupid-social-media.netlify.app/",
+			"code": "https://github.com/Harish-b-03/cupid--social-media"
+		},
+		{
+			"id": "6",
+			"title": "Star.",
+			"description": "Landing Page",
+			"imageSrc": "https://images.unsplash.com/photo-1487837647815-bbc1f30cd0d2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Njl8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
+			"website": "https://star-landing-page.netlify.app/",
+			"code": "https://github.com/Harish-b-03/star--landing-page"
+		},
+		{
+			"id": "7",
+			"title": "Google Drive - clone",
+			"description": "File Storage App",
+			"imageSrc": "https://images.unsplash.com/photo-1534239143101-1b1c627395c5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NzZ8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
+			"website": "https://vinaymoolya.github.io/gdrivefms/"
+		}
+	],
+	"projects": [
+		{
+			"id": "1",
+			"title": "Store.",
+			"description": "Ecommerce Website",
+			"imageSrc": "/images/online-shopping.jpg",
+			"website": "https://store-ecommerce-harish-b-03.vercel.app",
+			"code": "https://github.com/Harish-b-03/store-ecommerce"
+		},
+		{
+			"id": "2",
+			"title": "RecipeGPT",
+			"description": "GPT-powered Recipe Generator",
+			"imageSrc": "/images/open-ai-banner.jpg",
+			"website": "https://recipe-gpt.netlify.app/",
+			"code": "https://github.com/Harish-b-03/recipe-gpt"
+		},
+		{
+			"id": "3",
+			"title": "Portfolio",
+			"description": "Personal Website",
+			"imageSrc": "https://images.unsplash.com/photo-1504083898675-c896ecdae86e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjJ8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
+			"website": "",
+			"code": "https://github.com/Harish-b-03/portfolio"
+		},
+		{
+			"id": "4",
+			"title": "PhotoFrame",
+			"description": "Photo Gallery App",
+			"imageSrc": "/images/photoframe.jpg",
+			"website": "https://photoframe-personal.netlify.app/",
+			"code": "https://github.com/Harish-b-03/gallery"
+		},
+		{
+			"id": "5",
+			"title": "Cupid",
+			"description": "Social Media App",
+			"imageSrc": "/images/social-media.jpg",
+			"website": "https://cupid-social-media.netlify.app/",
+			"code": "https://github.com/Harish-b-03/cupid--social-media"
+		},
+		{
+			"id": "7",
+			"title": "Star.",
+			"description": "Landing Page",
+			"imageSrc": "https://images.unsplash.com/photo-1487837647815-bbc1f30cd0d2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Njl8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
+			"website": "https://star-landing-page.netlify.app/",
+			"code": "https://github.com/Harish-b-03/star--landing-page"
+		}
+	],
+	"blogs": [
+		{
+			"id": "1",
+			"title": "Art Direction",
+			"description": "We help with the creation and development of online advertising ideas, with particular focus on their visual appearance."
+		},
+		{
+			"id": "2",
+			"title": "Branding",
+			"description": "We design key brand elements such as the logo, color scheme, typography, and other design components that makes your brand stand out from competitors."
+		},
+		{
+			"id": "3",
+			"title": "Web Design",
+			"description": "We build and optimize your online presence.  Website is the digital entry point into your business and a powerful revenue channel."
+		},
+		{
+			"id": "4",
+			"title": "3D Design",
+			"description": "We combine creative design and technical skills to build striking 3D visualisations that bring your project to life."
+		}
+	],
+	"aboutpara": "I am a Chennai-based software engineer with a passion for continuous learning. Currently pursuing my final year in Computer Science Engineering at Vellore Institute of Technology, Chennai. /n I have gained practical experience as a Software Developer Intern at CoffeeInc, working on multiple web-based projects using Next.js, React.js, PostgreSQL, API, and AWS. I played a pivotal role in designing and implementing frontend interfaces, developing backend logic, and integrating with databases. /n Additionally, I have actively contributed to open-source projects, collaborating with talented developers globally. With a strong educational background, practical experience, and a commitment to open-source contributions, I am prepared to embrace the next big challenges with enthusiasm and determination.",
+	"resume": {
+		"name": "Harish Balaji",
+		"tagline": "Software Developer",
+		"location": "Chennai, India",
+		"description": "A software engineer who thrives on learning and discovering. As an intern at a startup, I contributed to exciting projects and actively participated in open source initiatives. Now, I'm eager to find new opportunities that allow me to learn, grow, and take my skills to the next level.",
+		"experiences": [
+			{
+				"id": "1",
+				"dates": "Nov 2020 - Present",
+				"type": "Part Time & Full Time (now)",
+				"position": "Software Developer Intern at Coffee Inc",
+				"bullets": "Worked on multiple web-based projects using Next.js, React.js, PostgreSQL, API and AWS at CoffeeInc, a Chennai-based startup. /n Actively contributed to the development of 6 successful projects and helped launch 2 new products. /n Played a pivotal role in designing and implementing frontend interfaces, developing backend logic, and integrating with databases and other services. /n Leveraged my writing skills to author insightful blog posts, sharing my development journey"
+			},
+			{
+				"id": "d495c23b-4f65-479a-9b8a-cfbc1c089725",
+				"dates": "April 2022 - Present",
+				"type": "",
+				"position": "Open Source Projects Contributions",
+				"bullets": "Actively contributing to open source projects such as AsyncAPI and OpenCollective. /n Made valuable contributions to these projects, including bug fixes and enhancements. /n Collaborated with talented developers worldwide, by actively engaging in the open source community. /n Provided practical solutions by diving into existing codebases, understanding complex systems."
+			}
+		],
+		"education": [
+			{
+				"degree": "BTech Computer Science and Engineering",
+				"universityName": "Vellore Institute of Technology, Chennai",
+				"universityDate": "2020-2024",
+				"universityPara": ""
+			},
+			{
+				"degree": "Diploma in Data Science",
+				"universityName": "Indian Institute of Technology, Madras",
+				"universityDate": "2020-2023",
+				"universityPara": ""
+			}
+		],
+		"languages": ["Java", "Javascript", "HTML5", "CSS", "Python", "C++"],
+		"frameworks": ["Next.js", "React.js", "Typescript", "NodeJs"],
+		"others": ["PostgreSQL", "AWS", "MongoDB", "REST API", "Figma", "Git"],
+		"activites": "Loves to share my experiences, insights, and knowledge and contributing to the tech community's growth by writing blog posts about my development journey and various technology topics."
+	}
+}
