@@ -10,6 +10,7 @@ import Works from "@/components/works";
 import data from "../data/portfolio.json";
 import Blogs from "@/components/blogs";
 import About from "@/components/about";
+import { SEO } from "@/utils/constants";
 
 export default function Home() {
 	const [mounted, setMounted] = useState(false);
@@ -30,7 +31,33 @@ export default function Home() {
 		>
 			{data.showCursor && <Cursor />}
 			<Head>
-				<title>{data.name + "'s portfolio"}</title>
+				<title>{SEO.home.title}</title>
+                <meta name="description" content={SEO.home.description} />
+                <meta
+                    key="og:type"
+                    name="og:type"
+                    content={SEO.home.openGraph.type}
+                />
+                <meta
+                    key="og:title"
+                    name="og:title"
+                    content={SEO.home.title}
+                />
+                <meta
+                    key="og:description"
+                    name="og:description"
+                    content={SEO.home.description}
+                />
+                <meta
+                    key="og:url"
+                    name="og:url"
+                    content={SEO.home.openGraph.url}
+                />
+                <meta
+                    key="og:image"
+                    name="og:image"
+                    content={SEO.home.openGraph.image}
+                />
 			</Head>
 
 			<div className="gradient-circle"></div>

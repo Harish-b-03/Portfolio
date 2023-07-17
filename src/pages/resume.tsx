@@ -12,6 +12,7 @@ import ResumeSkills from "@/components/resume/resume-skills";
 import ResumeExperience from "@/components/resume/resume-experience";
 import ResumeEducation from "@/components/resume/resume-education";
 import ResumeActivities from "@/components/resume/resume-activities";
+import { SEO } from "@/utils/constants";
 
 const Resume = () => {
 	const router = useRouter();
@@ -31,7 +32,33 @@ const Resume = () => {
 			} overflow-x-hidden overflow-y-hidden scroll-smooth cursor-none`}
 		>
 			<Head>
-				<title>Resume | Harish</title>
+				<title>{SEO.resume.title}</title>
+				<meta name="description" content={SEO.resume.description} />
+				<meta
+					key="og:type"
+					name="og:type"
+					content={SEO.resume.openGraph.type}
+				/>
+				<meta
+					key="og:title"
+					name="og:title"
+					content={SEO.resume.title}
+				/>
+				<meta
+					key="og:description"
+					name="og:description"
+					content={SEO.resume.description}
+				/>
+				<meta
+					key="og:url"
+					name="og:url"
+					content={SEO.resume.openGraph.url}
+				/>
+				<meta
+					key="og:image"
+					name="og:image"
+					content={SEO.resume.openGraph.image}
+				/>
 			</Head>
 			{data.showCursor && <Cursor />}
 			<div
