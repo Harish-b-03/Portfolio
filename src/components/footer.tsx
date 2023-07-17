@@ -9,10 +9,10 @@ const Footer = ({}) => {
 	return (
 		<>
 			<div className="w-full mt-5 laptop:mt-40 p-2 laptop:p-0 flex justify-center items-center">
-				<div className="w-3/5">
+				<div className="w-full tablet:w-3/5">
 					<HandwrittenHeading title="Contact" />
 					<div className="mt-10 w-full flex flex-col justify-center items-center">
-						<h1 className="text-3xl tablet:text-4xl laptop:text-4xl laptopl:text-8xl text-bold">
+						<h1 className="text-2xl mob:text-3xl tablet:text-4xl laptop:text-4xl laptopl:text-8xl text-bold text-center">
 							Let&apos;s meet and have a cup of coffee
 						</h1>
 						<div className="mt-5">

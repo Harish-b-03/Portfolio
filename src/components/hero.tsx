@@ -15,7 +15,7 @@ const Hero = () => {
 
 	return (
 		<div className="py-20 tablet:py-0 w-full tablet:h-screen tablet:max-h-[600px] flex justify-center items-center">
-			<div className="w-full tablet:w-1/2 h-[300px] tablet:h-fit">
+			<div className="w-full tablet:w-1/2 h-[250px] mob:h-[300px] tablet:h-fit">
 				<div className="w-full h-full flex">
 					<div className="w-1/2 h-[90%] flex tablet:hidden justify-center items-center">
 						<img
@@ -24,13 +24,13 @@ const Hero = () => {
 						/>
 					</div>
 					<div className="w-1/2 tablet:w-fit h-full flex flex-col justify-center items-center tablet:items-start">
-						<h1 className="font-semibold text-3xl tablet:text-5xl laptop:text-6xl p-1 tablet:p-2 text-bold w-4/5 mob:w-full laptop:w-4/5">
+						<h1 className="w-full font-semibold text-2xl mob:text-3xl tablet:text-5xl laptop:text-6xl p-1 tablet:p-2 text-bold mob:w-full laptop:w-4/5">
 							{data.headerTaglineOne}
 						</h1>
-						<h1 className="font-semibold text-3xl tablet:text-5xl laptop:text-6xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5">
+						<h1 className="font-semibold text-2xl mob:text-3xl tablet:text-5xl laptop:text-6xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5">
 							{data.headerTaglineTwo}
 						</h1>
-						<h1 className="text-xl tablet:text-3xl laptop:text-5xl p-1 tablet:p-2 text-bold w-full">
+						<h1 className="text-2xl mob:text-2xl tablet:text-3xl laptop:text-5xl p-1 tablet:p-2 text-bold w-full">
 							{data.headerTaglineThree}
 						</h1>
 					</div>
