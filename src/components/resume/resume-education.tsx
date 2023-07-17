@@ -9,7 +9,7 @@ const ResumeEducation = () => {
 				{resume.education.map((ed, index) => (
 					<div key={index}>
 						<h1 className="text-lg font-semibold">{ed.degree}</h1>
-						<h2 className="text-lg">{ed.universityName}</h2>
+						<h2 className="text-sm tablet:text-lg">{ed.universityName}</h2>
 						<h3 className="text-sm opacity-75">
 							{ed.universityDate}
 						</h3>
