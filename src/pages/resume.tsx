@@ -26,7 +26,7 @@ const Resume = () => {
 	}, []);
 	return (
 		<main
-			className={`relative px-10 w-100 min-h-screen ${
+			className={`relative px-5 laptop:px-10 w-100 min-h-screen ${
 				data.showCursor && "cursor-none"
 			} overflow-x-hidden overflow-y-hidden scroll-smooth cursor-none`}
 		>

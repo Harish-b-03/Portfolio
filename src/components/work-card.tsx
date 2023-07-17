@@ -27,15 +27,15 @@ const WorkCard = ({ img, name, description, website, code }: any) => {
 				</div>
 			</a>
 			<div className="w-full flex justify-between items-center">
-				<div className="w-5/6">
-					<h1 className="mt-5 text-3xl font-medium">
+				<div className="w-4/6 tablet:w-5/6">
+					<h1 className="mt-5 text-2xl tablet:text-3xl font-medium">
 						{name ? name : "Project Name"}
 					</h1>
-					<h2 className="text-xl opacity-50">
+					<h2 className="tablet:text-xl opacity-50">
 						{description ? description : "Description"}
 					</h2>
 				</div>
-				<div className="w-1/6 flex justify-between items-center">
+				<div className="w-1/4 tablet:w-1/6 flex justify-between items-center">
 					{code !== undefined && (
 						<a href={code} className="link cursor-none">
 							<Button>
