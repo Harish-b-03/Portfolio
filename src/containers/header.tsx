@@ -1,24 +1,11 @@
-import { useTheme } from "next-themes";
-import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
-
-import data from "@/data/portfolio.json";
 import { Popover } from "@headlessui/react";
-import HeaderLinks from "./header-links";
-import DarkModeButton from "./atomic/dark-mode-button";
-import Logo from "./atomic/logo";
+import HeaderLinks from "../components/header-links";
+import DarkModeButton from "../components/atomic/dark-mode-button";
+import Logo from "../components/atomic/logo";
+import { useTheme } from "@/contexts/theme-context";
 
 const Header = ({ isBlog }: any) => {
 	const { theme } = useTheme();
-	const [mounted, setMounted] = useState(false);
-
-	const { name } = data;
-
-	useEffect(() => {
-		setMounted(true);
-	}, []);
-
-	if (!mounted) return <></>;
 
 	return (
 		<>
@@ -64,20 +51,18 @@ const Header = ({ isBlog }: any) => {
 				)}
 			</Popover>
 			<div
-				className={`mt-10 hidden flex-row items-center justify-between sticky ${
-					theme === "light" && "bg-white"
-				} dark:text-white top-0 z-10 tablet:flex cursor-none hover:cursor-none`}
+				className={`mt-10 hidden flex-row items-center justify-between sticky dark:text-white top-0 z-10 tablet:flex cursor-none hover:cursor-none`}
 			>
 				<Logo />
 				{!isBlog ? (
 					<div className="flex">
 						<HeaderLinks />
-						{mounted && theme && <DarkModeButton />}
+						<DarkModeButton />
 					</div>
 				) : (
 					<div className="flex">
 						<HeaderLinks isHome={false} />
-						{mounted && theme && <DarkModeButton />}
+						<DarkModeButton />
 					</div>
 				)}
 			</div>

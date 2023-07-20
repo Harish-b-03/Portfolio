@@ -1,24 +1,18 @@
-import React, { useEffect, useState } from "react";
 import Button from "../button";
-import { useTheme } from "next-themes";
 import data from "@/data/portfolio.json";
+import { useTheme } from "@/contexts/theme-context";
 
 const DarkModeButton = () => {
-	const { theme, setTheme } = useTheme();
-	const [mounted, setMounted] = useState(false);
-
-	useEffect(() => {
-		setMounted(true);
-	}, []);
-
-	if (!mounted) return <></>;
+	const { theme, changeTheme } = useTheme();
 
 	return data.darkMode ? (
-		<Button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+		<Button
+			onClick={() => changeTheme(theme === "dark" ? "light" : "dark")}
+		>
 			<img
 				className="h-6"
 				src={`/images/${theme === "dark" ? "moon.svg" : "sun.svg"}`}
-                alt="sun"
+				alt="sun"
 			></img>
 		</Button>
 	) : (

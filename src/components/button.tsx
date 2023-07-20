@@ -1,18 +1,10 @@
-import React, { useEffect, useState } from "react";
-import { useTheme } from "next-themes";
 import data from "@/data/portfolio.json";
+import { useTheme } from "@/contexts/theme-context";
 
 const Button = ({ children, type, onClick = () => {}, classes }: any) => {
 	const { theme } = useTheme();
-	const [mounted, setMounted] = useState(false);
 
-	useEffect(() => {
-		setMounted(true);
-	}, []);
-
-	if (!mounted) return <></>;
-
-	else if (type === "primary") {
+	if (type === "primary") {
 		return (
 			<button
 				onClick={onClick}

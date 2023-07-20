@@ -1,5 +1,4 @@
-import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
+import { useTheme } from "@/contexts/theme-context";
 
 const PrimaryButton = ({
 	title,
@@ -8,15 +7,7 @@ const PrimaryButton = ({
 	title: string;
 	onClick?: any;
 }) => {
-	const [mounted, setMounted] = useState(false);
 	const { theme } = useTheme();
-	useEffect(() => {
-		setMounted(true);
-	}, []);
-
-	if (!mounted) {
-		return <></>;
-	}
 
 	return (
 		<button

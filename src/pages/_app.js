@@ -1,12 +1,14 @@
 import "../styles/globals.css";
-import { ThemeProvider } from "next-themes";
+import { ThemeProvider } from "@/contexts/theme-context";
 
 const App = ({ Component, pageProps }) => {
-  return (
-    <ThemeProvider defaultTheme="light">
-      <Component {...pageProps} />
-    </ThemeProvider>
-  );
+	return (
+		<>
+			<ThemeProvider>
+				<Component {...pageProps} />
+			</ThemeProvider>
+		</>
+	);
 };
 
 export default App;

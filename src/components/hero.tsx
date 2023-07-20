@@ -1,17 +1,8 @@
-import { useEffect, useRef, useState } from "react";
 import Socials from "./socials";
 import data from "@/data/portfolio.json";
-import { useTheme } from "next-themes";
+import PrimaryButton from "./atomic/primary-button";
 
 const Hero = () => {
-	const { theme } = useTheme();
-	const [mounted, setMounted] = useState(false);
-
-	useEffect(() => {
-		setMounted(true);
-	}, []);
-
-	if (!mounted) return <></>;
 
 	return (
 		<div className="py-20 tablet:py-0 w-full tablet:h-screen tablet:max-h-[600px] flex justify-center items-center">
@@ -39,15 +30,7 @@ const Hero = () => {
 					<Socials className="" />
 				</div>
 				<h1 className="mt-5 p-1 tablet:p-2 text-bold w-full flex justify-center items-center tablet:justify-start laptop:w-4/5 ">
-					<button
-						className={`w-36 h-12 flex justify-center items-center ${
-							theme === "dark"
-								? "bg-gray-100 text-black shadow-sm shadow-gray-200 hover:shadow-gray-900 hover:bg-black hover:border-gray-500 hover:text-white"
-								: "bg-black text-white shadow-gray-800 hover:shadow-gray-400 hover:bg-white hover:border-black hover:text-black"
-						} shadow-md font-semibold rounded-md cursor-none border border-transparent transition-all duration-200`}
-					>
-						Let{"'"}s connect
-					</button>
+					<PrimaryButton title="Let's Connect" />
 				</h1>
 			</div>
 			<div className="laptop:w-1/3 h-[90%] hidden tablet:flex justify-center items-center">

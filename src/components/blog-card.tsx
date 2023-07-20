@@ -1,18 +1,7 @@
-import GithubIcon from "./icons/github-icon";
-import Button from "./button";
-import WebsiteIcon from "./icons/website-icon";
-import { useEffect, useState } from "react";
-import { useTheme } from "next-themes";
+import { useTheme } from "@/contexts/theme-context";
 
 const BlogCard = ({ img, name, link, loading = false }: any) => {
-	const [mounted, setMounted] = useState(false);
 	const { theme } = useTheme();
-
-	useEffect(() => {
-		setMounted(true);
-	}, []);
-
-	if (!mounted) return <></>;
 
 	return (
 		<div

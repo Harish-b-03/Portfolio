@@ -3,6 +3,7 @@ const workURL = "/#work";
 const aboutURL = "/#about";
 const blogURL = "/#blog";
 const resumeURL = "/resume";
+export const defaultTheme = "light";
 
 const SEO = {
 	home: {
