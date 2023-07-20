@@ -8,16 +8,18 @@ const Layout = ({ children, isBlog = false }: any) => {
 
 	return (
 		<main
-			className={`relative px-5 laptop:px-10 w-100 min-h-screen ${
+			className={`relative w-full h-screen ${
 				data.showCursor && "cursor-none"
 			} ${
 				theme === "light"
 					? "bg-white text-black"
 					: "bg-black text-white"
-			} overflow-x-hidden overflow-y-hidden scroll-smooth cursor-none transition-all duration-300`}
+			} overflow-hidden scroll-smooth  cursor-none transition-all duration-300`}
 		>
-			<Header isBlog={isBlog} />
-			{children}
+			<div className="px-5 laptop:px-20 w-full h-fit overflow-hidden">
+				<Header isBlog={isBlog} />
+				{children}
+			</div>
 		</main>
 	);
 };

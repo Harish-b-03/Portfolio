@@ -25,7 +25,7 @@ const Resume = () => {
 	}, []);
 
 	return (
-		<Layout>
+		<Layout isBlog={true}>
 			<Head>
 				<title>{SEO.resume.title}</title>
 				<link rel="icon" href="/favicon.ico" sizes="any" />

@@ -1,16 +1,8 @@
 import GithubIcon from "./icons/github-icon";
 import Button from "./button";
 import WebsiteIcon from "./icons/website-icon";
-import { useEffect, useState } from "react";
 
 const WorkCard = ({ img, name, description, website, code }: any) => {
-	const [mounted, setMounted] = useState(false);
-
-	useEffect(() => {
-		setMounted(true);
-	}, []);
-
-	if (!mounted) return <></>;
 
 	return (
 		<div className="overflow-hidden rounded-lg p-2 laptop:p-4 first:ml-0 link cursor-none">

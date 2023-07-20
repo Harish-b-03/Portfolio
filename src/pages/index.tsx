@@ -1,10 +1,7 @@
-import { useEffect, useState } from "react";
 import Hero from "../components/hero";
 import Head from "next/head";
 import Cursor from "@/components/cursor";
-import ServiceCard from "@/components/service-card";
 import Footer from "@/components/footer";
-import Header from "@/containers/header";
 import Works from "@/components/works";
 // Local Data
 import data from "../data/portfolio.json";
@@ -14,16 +11,6 @@ import { SEO } from "@/utils/constants";
 import Layout from "@/containers/layout";
 
 export default function Home() {
-	const [mounted, setMounted] = useState(false);
-
-	useEffect(() => {
-		setMounted(true);
-	}, []);
-
-	if (!mounted) {
-		return <></>;
-	}
-
 	return (
 		<Layout>
 			{data.showCursor && <Cursor />}
@@ -53,9 +40,10 @@ export default function Home() {
 					content={SEO.home.openGraph.image}
 				/>
 			</Head>
-
-			<div className="gradient-circle"></div>
-			<div className="gradient-circle-bottom"></div>
+			<div className="w-full">
+				<div className="gradient-circle"></div>
+				<div className="gradient-circle-bottom"></div>
+			</div>
 
 			<div className="container mx-auto mb-10">
 				<Hero />
