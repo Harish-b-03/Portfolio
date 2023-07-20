@@ -1,21 +1,25 @@
 import GithubIcon from "./icons/github-icon";
 import Button from "./button";
 import WebsiteIcon from "./icons/website-icon";
+import Image from "next/image";
 
 const WorkCard = ({ img, name, description, website, code }: any) => {
-
 	return (
-		<div className="overflow-hidden rounded-lg p-2 laptop:p-4 first:ml-0 link cursor-none">
-			<a href={website} target="_blank">
+		<div className="w-full overflow-hidden rounded-lg p-2 laptop:p-4 first:ml-0 link cursor-none">
+			<a href={website} target="_blank" className="w-full">
 				<div
-					className="relative rounded-lg overflow-hidden transition-all ease-out duration-300 mob:h-auto"
+					className="w-full relative rounded-lg overflow-hidden transition-all ease-out duration-300 mob:h-auto"
 					style={{ height: "300px" }}
 				>
-					<img
-						alt={name}
-						className="h-full w-full object-cover hover:scale-110 transition-all ease-out duration-300 cursor-none"
-						src={img}
-					></img>
+					<div className="relative w-full h-full">
+						<Image
+							src={img}
+							alt={name}
+							fill
+							sizes=""
+							className="object-cover hover:scale-110 transition-all ease-out duration-300 cursor-none"
+						/>
+					</div>
 				</div>
 			</a>
 			<div className="w-full flex justify-between items-center">

@@ -1,9 +1,7 @@
 import data from "@/data/portfolio.json";
-import ServiceCard from "./service-card";
 import { useEffect, useState } from "react";
 import HandwrittenHeading from "./atomic/handwritten-heading";
 import BlogCard from "./blog-card";
-import Button from "./button";
 import PrimaryButton from "./atomic/primary-button";
 
 export interface BlogType {
@@ -59,9 +57,16 @@ const Blogs = () => {
 					/>
 				))}
 			</div>
+			{!loading && blogList.length <= 0 && (
+				<div>
+					<span className="text-xs">
+                        Failed to load blog posts due to network error
+                    </span>
+				</div>
+			)}
 			<div className="w-full flex justify-center items-center">
 				<a href={data.mediumURL} target="_blank">
-					<PrimaryButton title="Read more"/>
+					<PrimaryButton title="Read more" />
 				</a>
 			</div>
 		</div>

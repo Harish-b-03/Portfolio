@@ -1,6 +1,7 @@
 import Button from "../button";
 import data from "@/data/portfolio.json";
 import { useTheme } from "@/contexts/theme-context";
+import Image from "next/image";
 
 const DarkModeButton = () => {
 	const { theme, changeTheme } = useTheme();
@@ -9,11 +10,12 @@ const DarkModeButton = () => {
 		<Button
 			onClick={() => changeTheme(theme === "dark" ? "light" : "dark")}
 		>
-			<img
-				className="h-6"
+			<Image
 				src={`/images/${theme === "dark" ? "moon.svg" : "sun.svg"}`}
 				alt="sun"
-			></img>
+                width={24}
+                height={24}
+			/>
 		</Button>
 	) : (
 		<></>

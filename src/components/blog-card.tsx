@@ -1,4 +1,5 @@
 import { useTheme } from "@/contexts/theme-context";
+import Image from "next/image";
 
 const BlogCard = ({ img, name, link, loading = false }: any) => {
 	const { theme } = useTheme();
@@ -17,12 +18,16 @@ const BlogCard = ({ img, name, link, loading = false }: any) => {
 					target="_blank"
 					className="w-full p-2 laptop:p-5 cursor-none h-full"
 				>
-					<div className="h-3/5 max-h-[180px] desktop:max-h-max px-2 laptop:px-5 relative rounded-lg overflow-hidden flex justify-center items-center transition-all ease-out duration-300">
-						<img
-							alt={name}
-							className="h-full w-full object-cover transition-all ease-out duration-300"
-							src={img}
-						></img>
+					<div className="w-full h-3/5 max-h-[180px] desktop:max-h-max px-2 laptop:px-5 relative rounded-lg overflow-hidden flex justify-center items-center transition-all ease-out duration-300">
+						<div className="relative w-full h-full">
+							<Image
+								src={img}
+								alt={name}
+								fill
+								sizes=""
+								className="object-cover transition-all ease-out duration-300"
+							/>
+						</div>
 					</div>
 					<div className="w-full px-2 laptop:px-5 flex flex-col justify-center items-center">
 						<div className="w-full">

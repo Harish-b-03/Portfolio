@@ -1,17 +1,20 @@
 import Socials from "./socials";
 import data from "@/data/portfolio.json";
 import PrimaryButton from "./atomic/primary-button";
+import Image from "next/image";
 
 const Hero = () => {
-
 	return (
 		<div className="py-20 tablet:py-0 w-full tablet:h-screen tablet:max-h-[600px] flex justify-center items-center">
 			<div className="w-full tablet:w-1/2 h-[250px] mob:h-[300px] tablet:h-fit">
 				<div className="w-full h-full flex">
-					<div className="w-1/2 h-[90%] flex tablet:hidden justify-center items-center">
-						<img
+					<div className="relative w-1/2 h-[90%] flex tablet:hidden justify-center items-center">
+						<Image
 							src="/images/bitmoji.webp"
-							className="w-full h-full"
+                            alt="Harish's Bitmoji"
+							fill
+                            priority
+                            className="object-contain"
 						/>
 					</div>
 					<div className="w-1/2 tablet:w-fit h-full flex flex-col justify-center items-center tablet:items-start">
@@ -34,7 +37,15 @@ const Hero = () => {
 				</h1>
 			</div>
 			<div className="laptop:w-1/3 h-[90%] hidden tablet:flex justify-center items-center">
-				<img src="/images/bitmoji.webp" className="h-full mb-16" />
+				<div className="relative w-full h-full">
+					<Image
+						src="/images/bitmoji.webp"
+						alt="Harish's Bitmoji"
+						fill
+                        priority
+                        className="object-contain"
+					/>
+				</div>
 			</div>
 		</div>
 	);
