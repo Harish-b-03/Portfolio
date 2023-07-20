@@ -3,6 +3,8 @@ const workURL = "/#work";
 const aboutURL = "/#about";
 const blogURL = "/#blog";
 const resumeURL = "/resume";
+export const contact = "mailto:harishbalaji369@gmail.com";
+
 export const defaultTheme = "light";
 
 const SEO = {

@@ -51,7 +51,7 @@ const Header = ({ isBlog }: any) => {
 				)}
 			</Popover>
 			<div
-				className={`px-5 laptop:px-20 mt-10 hidden flex-row items-center justify-between sticky dark:text-white top-0 z-10 tablet:flex cursor-none hover:cursor-none`}
+				className={`mt-10 hidden flex-row items-center justify-between sticky top-0 z-10 tablet:flex cursor-none hover:cursor-none`}
 			>
 				<Logo />
 				{!isBlog ? (

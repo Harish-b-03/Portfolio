@@ -2,19 +2,22 @@ import Socials from "./socials";
 import data from "@/data/portfolio.json";
 import PrimaryButton from "./atomic/primary-button";
 import Image from "next/image";
+import Button from "./button";
+import { contact, resumeURL } from "@/utils/constants";
+import Link from "next/link";
 
 const Hero = () => {
 	return (
 		<div className="py-20 tablet:py-0 w-full tablet:h-screen tablet:max-h-[600px] flex justify-center items-center">
-			<div className="w-full tablet:w-1/2 h-[250px] mob:h-[300px] tablet:h-fit">
-				<div className="w-full h-full flex">
-					<div className="relative w-1/2 h-[90%] flex tablet:hidden justify-center items-center">
+			<div className="w-full tablet:w-1/2 h-[250px] mob:h-[350px] tablet:h-fit">
+				<div className="w-full h-3/5 tablet:h-full flex">
+					<div className="relative w-1/2 h-full tablet:h-[90%] flex tablet:hidden justify-center items-center">
 						<Image
 							src="/images/bitmoji.webp"
-                            alt="Harish's Bitmoji"
+							alt="Harish's Bitmoji"
 							fill
-                            priority
-                            className="object-contain"
+							priority
+							className="object-contain"
 						/>
 					</div>
 					<div className="w-1/2 tablet:w-fit h-full flex flex-col justify-center items-center tablet:items-start">
@@ -29,21 +32,35 @@ const Hero = () => {
 						</h1>
 					</div>
 				</div>
-				<div className="w-full flex justify-center items-center tablet:justify-start">
+				<div className="mt-5 tablet:mt-0 w-full flex justify-center items-center tablet:justify-start">
 					<Socials className="" />
 				</div>
-				<h1 className="mt-5 p-1 tablet:p-2 text-bold w-full flex justify-center items-center tablet:justify-start laptop:w-4/5 ">
-					<PrimaryButton title="Let's Connect" />
-				</h1>
+				<div className="mt-5 p-1 tablet:p-2 flex flex-col tablet:flex-row justify-center tablet:justify-start items-center">
+					<div>
+						<PrimaryButton
+							title="Let's Connect"
+							onClick={() => window.open(contact)}
+						/>
+					</div>
+					<div className="ml-0 mt-5 tablet:ml-12 tablet:mt-0">
+						<Link href={resumeURL} passHref>
+							<Button classes="border border-gray-400 rounded-lg hover:bg-gray-200">
+								<span className="px-5 py-1 text-gray-800 hover:text-black">
+									View Resume
+								</span>
+							</Button>
+						</Link>
+					</div>
+				</div>
 			</div>
-			<div className="laptop:w-1/3 h-[90%] hidden tablet:flex justify-center items-center">
+			<div className="w-3/5 laptop:w-1/3 h-[90%] hidden tablet:flex justify-center items-center">
 				<div className="relative w-full h-full">
 					<Image
 						src="/images/bitmoji.webp"
 						alt="Harish's Bitmoji"
 						fill
-                        priority
-                        className="object-contain"
+						priority
+						className="object-contain"
 					/>
 				</div>
 			</div>
