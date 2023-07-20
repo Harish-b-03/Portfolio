@@ -8,7 +8,7 @@ const Layout = ({ children, isBlog = false }: any) => {
 
 	return (
 		<main
-			className={`relative w-full h-screen ${
+			className={`relative w-full h-fit ${
 				data.showCursor && "cursor-none"
 			} ${
 				theme === "light"

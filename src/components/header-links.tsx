@@ -2,6 +2,7 @@ import { aboutURL, blogURL, resumeURL, workURL } from "@/utils/constants";
 import Link from "next/link";
 import Button from "./button";
 import data from "@/data/portfolio.json";
+import ScrollLink from "./atomic/scroll-link";
 
 const HeaderLinks = ({ isMobile = false, isHome = true }) => {
 	const { showBlog, showResume } = data;
@@ -14,19 +15,19 @@ const HeaderLinks = ({ isMobile = false, isHome = true }) => {
 				</Link>
 			)}
 			{isHome && (
-				<Link href={workURL} passHref>
+				<ScrollLink href={workURL} passHref>
 					<Button>Work</Button>
-				</Link>
+				</ScrollLink>
 			)}
 			{showBlog && (
-                <Link href={blogURL} passHref>
+                <ScrollLink href={blogURL} passHref>
 					<Button>Blog</Button>
-				</Link>
+				</ScrollLink>
 			)}
             {isHome && (
-                <Link href={aboutURL} passHref>
+                <ScrollLink href={aboutURL} passHref>
                     <Button>About</Button>
-                </Link>
+                </ScrollLink>
             )}
 			{showResume && (
 				<Link href={resumeURL} passHref>
